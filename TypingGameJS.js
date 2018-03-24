@@ -130,5 +130,6 @@ function reset(){
 }
 
 function finished(){
-  alert("Congratulations!\nWords per minute: " + wpm + "\nWordcount: " + wordcount + "\nErrors:" + errors);
+  alert("Congratulations!\nWords per minute: " + wpm + "\nWordcount: " + wordcount + "\nErrors: " + errors);
+  window.location.href = "CambodiaInfo.html";
 }
