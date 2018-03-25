@@ -132,6 +132,12 @@ hr{
   right: 10px;
 }
 
+#home {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+
 .spell{
   font-size:40px;
   font-weight:900;
