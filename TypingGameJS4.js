@@ -129,10 +129,6 @@ function reset(){
   $("#target").text(current_string);
 }
 
-function home(){
-  window.location.href = "index.html";
-}
-
 function finished(){
   alert("Congratulations!\nWords per minute: " + wpm + "\nWordcount: " + wordcount + "\nErrors: " + errors);
   window.location.href = "index.html";
