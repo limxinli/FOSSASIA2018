@@ -130,10 +130,10 @@ function reset(){
 }
 
 function home(){
-  window.location.href = "Home.html";
+  window.location.href = "index.html";
 }
 
 function finished(){
   alert("Congratulations!\nWords per minute: " + wpm + "\nWordcount: " + wordcount + "\nErrors: " + errors);
-  window.location.href = "Home.html";
+  window.location.href = "index.html";
 }

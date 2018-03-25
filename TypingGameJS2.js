@@ -130,7 +130,7 @@ function reset(){
 }
 
 function home(){
-  window.location.href = "Home.html";
+  window.location.href = "index.html";
 }
 
 function finished(){
