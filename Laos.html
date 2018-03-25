@@ -3,67 +3,27 @@
 <html>
 
 <head>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <title>Word Typing Game: Laos</title>
+    <link href='TypingGameCSS.css' rel='stylesheet' type='text/css'/>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <title>Word Typing Game: Cambodia</title>
 </head>
 
 <body>
-
-    <h1>My First Heading</h1>
-    <p>My first paragraph.</p>
-
-</body>
-
-</html>
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<!-- Chart JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
-<!-- CSV to JS converter -->
-<script src="vendor/jquery-csv/src/jquery.csv.min.js"></script>
-<script>
-    $.ajax({
-        url: "Dataset/laos/Metadata_Indicator_API_SH.H2O.SAFE.ZS_DS2.csv",
-        async: false,
-        success: function(csvd) {
-            data = $.csv.toArrays(csvd);
-            console.log(data);
-        },
-        dataType: "text",
-        complete: function() {
-            // call a function on complete 
-        }
-    });
-    // //var csv is the CSV file with headers
-    // function csvJSON(csv) {
-
-    //     var lines = csv.split("\n");
-
-    //     var result = [];
-
-    //     var headers = lines[0].split(",");
-
-    //     for (var i = 1; i < lines.length; i++) {
-
-    //         var obj = {};
-    //         var currentline = lines[i].split(",");
-
-    //         for (var j = 0; j < headers.length; j++) {
-    //             obj[headers[j]] = currentline[j];
-    //         }
-
-    //         result.push(obj);
-
-    //     }
-
-    //     //return result; //JavaScript object
-    //     return JSON.stringify(result); //JSON
-
-    //     console.log(result);
-    // }
-</script>
+<h1 id="output"></h1>
+<div class="target mono" id="target"></div>
+<div id="your-attempt" class="mono your-attempt" placeholder="Your text will appear here"></div>
+<div class="results">
+  <ul class="stats">
+    <li>Words per minute <span id="wpm">0</span></li>
+    <li>Wordcount <span id="wordcount">0</span></li>
+    <li>Timer <span id="timer">0</span></li>
+    <li>Errors <span id="errors">0</span></li>
+  </ul>
+</div>
+<hr style="clear:both;" />
+<div>
+<textarea name="" id="input_text" cols="30" rows="10">Arsenic </textarea>
+</div>
+<a href="#" id="reset">Reset</a>
+<a href="#" id="home">Home</a>
+<script src="TypingGameJS3.js"></script>

@@ -135,5 +135,5 @@ function home(){
 
 function finished(){
   alert("Congratulations!\nWords per minute: " + wpm + "\nWordcount: " + wordcount + "\nErrors: " + errors);
-  window.location.href = "Thailand.html";
+  window.location.href = "Home.html";
 }
